@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body .background {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, sans-serif;
+    color: #fff;
+    background: linear-gradient(to top right, rgb(255, 136, 0), rgb(211, 53, 80) );
+}
+
+body .number {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    color: #fff;
+}
+
+body .one {
+    position: relative;
+    height: 100px;
+    width: 24px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 13px rgb(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+body .one::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    border-radius: 3px;
+    transform: rotate(50deg);
+    left: -18px;
+    top: 2px;
+    background-color: #fff;
+}
+
+body .zero-first {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 24px solid #fff;
+    border-radius: 50%;
+    left: 16px;
+    box-shadow: 0 0 13px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+body .zero-second {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 24px solid #fff;
+    border-radius: 50%;
+    left: 101px;
+    box-shadow: 0 0 13px rgb(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 85px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
